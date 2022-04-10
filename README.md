@@ -297,4 +297,9 @@ var(set_data)
 [https://www.statology.org/plot-binomial-distribution-r/]
 [https://bookdown.org/gabriel_butler/ECON41Labs/tutorial-5-the-poisson-distribution.html]
 
+## Dokumentasi Pengerjaan
+![image](https://user-images.githubusercontent.com/103357229/162618071-a876a77c-00e6-4e0d-b8d4-11f5321ca44e.png)
 
+![image](https://user-images.githubusercontent.com/103357229/162618117-f46932c5-ed76-467c-96f1-022d3e691bd4.png)
+
+![image](https://user-images.githubusercontent.com/103357229/162618154-ddbf477d-1af6-4ae7-9a31-551e85c34fa2.png)
