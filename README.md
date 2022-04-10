@@ -264,3 +264,8 @@ Nilai Varian (σ²) dari hasil generate random nilai Distribusi Normal.
 ```sh
 var(set_data)
 ```
+
+## REFERENSI
+[https://rpubs.com/mpfoley73/458721]
+[https://www.statology.org/plot-binomial-distribution-r/]
+[https://bookdown.org/gabriel_butler/ECON41Labs/tutorial-5-the-poisson-distribution.html]
