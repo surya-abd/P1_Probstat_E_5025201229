@@ -14,7 +14,7 @@ mean Distribusi Geometrik dengan 10000 data random , prob = 0,20 dimana distribu
 ```sh
 mean(rgeom(n = 10000, prob = p) == 3)
 ```
-### 1.C. BELUM SELESAI
+### 1.C.
 Bandingkan Hasil poin a dan b , apa kesimpulan yang bisa didapatkan?
 > Pada suatu percobaan nilai yang didapatkan dari poin a adalah 0.1024 dan poin b adalah 0.1029. Kedua nilai tersebut saling mendekati. Dari percobaan tersebut dapat disimpulkan bahwa nilai peluang kejadian A adalah sama dengan nilai mean distribusi geometrik kejadian itu sendiri.
 ### 1.D.
@@ -270,4 +270,5 @@ var(set_data)
 [https://rpubs.com/mpfoley73/458721]
 [https://www.statology.org/plot-binomial-distribution-r/]
 [https://bookdown.org/gabriel_butler/ECON41Labs/tutorial-5-the-poisson-distribution.html]
+
 
