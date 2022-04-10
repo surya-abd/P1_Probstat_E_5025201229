@@ -43,6 +43,9 @@ data.frame(x = 0:10, prob = dgeom(x = 0:10, prob = p)) %>%
        x = "Kegagalan sebelum keberhasilan pertama (x)",
        y = "Probabilitas") 
 ```
+HASIL
+![Rplot](https://user-images.githubusercontent.com/103357229/162616317-ad8cf82e-ca96-4b39-9d1f-4defd16e2627.png)
+
 ### 1.E.
 Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Geometrik.
 >Untuk mencari rataan kita dapat menggunakan fungsi `mean()` dan untuk varian dapat menggunakan fungsi `var()`
@@ -77,6 +80,9 @@ p = dbinom(iter, size, prob)
 plot(iter,p,type='h')
 ```
 fungsi `plot()` digunakan untuk membuat plot dimana `type = 'h'` menandakan bahwa plot berupa histogram
+HASIL
+![2](https://user-images.githubusercontent.com/103357229/162616354-cb34fd1b-9423-4690-8beb-7b274337da99.png)
+
 ### 2.C.
 Nilai Rataan (μ) dan Varian (σ²) dari DistribusiBinomial.
 > Seperti soal 1, kita akan menggunakan fungsi `mean()` dan `var()` dengan code berikut:
@@ -122,6 +128,9 @@ babies %>% ggplot() +
 
 babies %>% dplyr::summarize(six_babies = sum(babies$data == 6) / n())
 ```
+HASIL
+![3](https://user-images.githubusercontent.com/103357229/162616377-4b023cba-2f2c-4523-8dad-ae4149f74458.png)
+
 ### 3.C.
 dan bandingkan hasil poin a dan b , Apa kesimpulan yang bisa didapatkan
 > Dalam suatu percobaan didapatkan nilai dari poin (a) adalah 0.1281201 dan poin (b) adalah 0.1150685. Kedua nilai ini sangat dekat. Sehingga, dapat ditarik kesimpulan bahwa peluang kejadian A sama dengan nilai jumlah distribusi Poissonnya.
@@ -153,6 +162,8 @@ n = 100
 set_data <- rchisq(n, v)
 hist(set_data, main = "chi-square histogram")
 ```
+![4b](https://user-images.githubusercontent.com/103357229/162616397-3bfc27a7-75e4-40e0-953f-266d6a81e13e.png)
+
 ### 4.C.
 Nilai Rataan (μ) dan Varian (σ²) dari DistribusiChi-Square.
 > Seperti soal sebelumnya akan digunakan fungsi `mean()` dan `var()`
@@ -194,6 +205,15 @@ hist(y_rexp, main = "Eksponensial N = 1,000")
 N <- 10000
 set_data <- rexp(N, rate = 3)
 ```
+HASIL secara urut dengan N 10, 100, 1000, dan 10000
+![5b](https://user-images.githubusercontent.com/103357229/162616411-ff12d03e-1ab1-4840-8030-f24e3ac444ac.png)
+
+![5b2](https://user-images.githubusercontent.com/103357229/162616435-3266b273-0729-4976-b0be-e06eafe5167b.png)
+
+![5b3](https://user-images.githubusercontent.com/103357229/162616443-3a483a1c-9917-4fa3-8f16-8c19c775cbf3.png)
+
+![5b4](https://user-images.githubusercontent.com/103357229/162616453-0f2e7d3b-3448-4115-8740-7b0727bb7f4e.png)
+
 ### 5.C.
 Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Exponensial untuk n = 100 dan λ = 3
 Petunjuk:
@@ -245,6 +265,9 @@ set_data <- rnorm(n, mean, sd)
 iter = seq(1, n, by = 1)
 plot(iter, set_data, type = 'l')
 ```
+HASIL
+![6a](https://user-images.githubusercontent.com/103357229/162616460-d8942cc3-19cd-47ac-abdf-d7c6fd80eb89.png)
+
 
 Untuk fungsi distribusi kita menggunakan fungsi `dnorm()`
 ```sh
@@ -259,6 +282,9 @@ Contoh :
 hist(set_data, breaks = 50, main = "5025201229_Surya_Probstat_E_DNhistogram
 ")
 ```
+HASIL
+![6b](https://user-images.githubusercontent.com/103357229/162616478-05872b61-4b08-463f-832e-6c1c486b1fd3.png)
+
 ### 6.C.
 Nilai Varian (σ²) dari hasil generate random nilai Distribusi Normal.
 > Seperti soal sebelumnya, kita akan menggunakan fungsi `var()` untuk mendapatkan nilai varian
