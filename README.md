@@ -1,3 +1,8 @@
+## P1_Probstat_E_5025201229
+Nama : Surya Abdillah
+NRP : 5025201229
+Kelas : Probabilitas dan Statistika E
+
 ## _Soal 1_
 Seorang penyurvei secara acak memilih orang-orang di jalan sampai dia bertemu dengan seseorang yang menghadiri acara vaksinasi sebelumnya.
 ### 1.A.
@@ -8,12 +13,14 @@ p = 0.20
 n = 3
 dgeom(n,p)
 ```
+![image](https://user-images.githubusercontent.com/103357229/162622544-29f087e0-30ff-4e36-9b0f-7cc7ffe43cfa.png)
 ### 1.B.
 mean Distribusi Geometrik dengan 10000 data random , prob = 0,20 dimana distribusi geometrik acak tersebut X = 3 ( distribusi geometrik acak () == 3 )
 > Untuk mendapatkan data random distribusi geometrik kita dapat menggunakan fungsi `rgeom()`. Dari niali tersebut kita gunakan sebagai argumen pada fungsi `mean()` untuk mendapatkan rata-ratanya
 ```sh
 mean(rgeom(n = 10000, prob = p) == 3)
 ```
+![image](https://user-images.githubusercontent.com/103357229/162622633-0a275969-022d-4480-bbf8-4706dac44afe.png)
 ### 1.C.
 Bandingkan Hasil poin a dan b , apa kesimpulan yang bisa didapatkan?
 > Pada suatu percobaan nilai yang didapatkan dari poin a adalah 0.1024 dan poin b adalah 0.1029. Kedua nilai tersebut saling mendekati. Dari percobaan tersebut dapat disimpulkan bahwa nilai peluang kejadian A adalah sama dengan nilai mean distribusi geometrik kejadian itu sendiri.
@@ -56,6 +63,7 @@ set_data <- rgeom(n = 10000, prob = p)
 mean(set_data)
 var(set_data)
 ```
+![image](https://user-images.githubusercontent.com/103357229/162622785-48ef4093-83c0-4846-982c-403b7c12cd24.png)
 ## Soal 2 
 Terdapat 20 pasien menderita Covid19 dengan peluang sembuh sebesar 0.2. Tentukan :
 > Dari pernyataan soal, dapat dideklarasikan variabel-variabel berikut:
@@ -70,6 +78,7 @@ Peluang terdapat 4 pasien yang sembuh.
 ```sh
 dbinom(x, size, prob)
 ```
+![image](https://user-images.githubusercontent.com/103357229/162622916-90fc2e5b-d8d9-4397-acb1-e664fab2ca9a.png)
 ### 2.B.
 Gambarkan grafik histogram berdasarkan kasus tersebut.
 > Dalam pengerjaan soal ini, praktikan membuat terlebih dahulu 2 variabel bantuan, yakni iter yang berisi iterasi dan p sebagai hasil distribusi dari setiap iterasi
@@ -92,6 +101,7 @@ set_data <- rbinom(x, size, prob)
 mean(set_data)
 var(set_data)
 ```
+![image](https://user-images.githubusercontent.com/103357229/162622984-7ff4e58d-8cf5-4fd0-8c4e-b8439e478308.png)
 ## Soal 3
 Diketahui data dari sebuah tempat bersalin di rumah sakit tertentu menunjukkan rata-rata historis 4,5 bayi lahir di rumah sakit ini setiap hari. (gunakan Distribusi Poisson)
 ```sh
@@ -103,6 +113,7 @@ Berapa peluang bahwa 6 bayi akan lahir di rumah sakit ini besok?
 ```sh
 dpois(6, lambda)
 ```
+![image](https://user-images.githubusercontent.com/103357229/162623003-64d6f8c9-d8ce-4b92-a04b-8f0e8854a04c.png)
 ### 3.B.
 simulasikan dan buatlah histogram kelahiran 6 bayi akan lahir di rumah sakit ini selama setahun (n = 365)
 > Untuk membuha histograf tersebut dapat menggunakan code berikut.
@@ -141,6 +152,7 @@ Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Poisson.
 mean(rpois(365, 4.5))
 var(rpois(365, 4.5))
 ```
+![image](https://user-images.githubusercontent.com/103357229/162623104-74a74017-9f9e-4d2a-b3a3-e6077cded7c8.png)
 
 ## Soal 4
 Diketahui nilai x = 2 dan v = 10. Tentukan:
@@ -154,6 +166,7 @@ Fungsi Probabilitas dari Distribusi Chi-Square.
 ```sh
 dchisq(x, v)
 ```
+![image](https://user-images.githubusercontent.com/103357229/162623128-82f766b6-b19c-4cb3-8444-1fafd381b6cc.png)
 ### 4.B.
 Histogram dari Distribusi Chi-Square dengan 100 data random.
 > Kita akan membuat data random, lalu akan dibuat histogramnya
@@ -171,6 +184,7 @@ Nilai Rataan (μ) dan Varian (σ²) dari DistribusiChi-Square.
 mean(set_data)
 var(set_data)
 ```
+![image](https://user-images.githubusercontent.com/103357229/162623165-145382bf-7396-46f1-990f-01d028c118a1.png)
 
 ## Soal 5
 Diketahui bilangan acak (random variable) berdistribusi exponential (λ = 3). Tentukan
@@ -185,6 +199,7 @@ Fungsi Probabilitas dari Distribusi Exponensial
 x_dexp <- seq(1, 10, by = 1)
 dexp(x_dexp, rate)
 ```
+![image](https://user-images.githubusercontent.com/103357229/162623195-02d374b0-8360-4129-a16a-234a168026f4.png)
 ### 5.B.
 Histogram dari Distribusi Exponensial untuk 10, 100, 1000 dan 10000 bilangan random
 > Kita akan membuat 4 histogram untuk masing-masing banyak bilangan. Alur pengerjaan adalah, membuat data random lalu membuat histogram menggunakan fungsi `hist()`
@@ -206,13 +221,13 @@ N <- 10000
 set_data <- rexp(N, rate = 3)
 ```
 HASIL secara urut dengan N 10, 100, 1000, dan 10000
-![5b](https://user-images.githubusercontent.com/103357229/162616411-ff12d03e-1ab1-4840-8030-f24e3ac444ac.png)
+![5BFIX1](https://user-images.githubusercontent.com/103357229/162623509-bc052edb-b38e-4a54-b2de-0b2104bc4ac1.png)
 
-![5b2](https://user-images.githubusercontent.com/103357229/162616435-3266b273-0729-4976-b0be-e06eafe5167b.png)
+![5BFIX2](https://user-images.githubusercontent.com/103357229/162623508-fdb320bf-74de-4dd3-af94-667247bdd17b.png)
 
-![5b3](https://user-images.githubusercontent.com/103357229/162616443-3a483a1c-9917-4fa3-8f16-8c19c775cbf3.png)
+![5BFIX3](https://user-images.githubusercontent.com/103357229/162623531-0f54c8bf-92dd-4199-bd94-64fec9cb085c.png)
 
-![5b4](https://user-images.githubusercontent.com/103357229/162616453-0f2e7d3b-3448-4115-8740-7b0727bb7f4e.png)
+![5BFIX4](https://user-images.githubusercontent.com/103357229/162623511-927b58b7-7f6a-44e1-aff5-06fb0db862a5.png)
 
 ### 5.C.
 Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Exponensial untuk n = 100 dan λ = 3
@@ -228,6 +243,8 @@ set_data <- rexp(n, rate)
 mean(set_data)
 var(set_data)
 ```
+![image](https://user-images.githubusercontent.com/103357229/162623626-dc8af74c-20c3-4e1f-9d9c-09c57acee28e.png)
+
 ## Soal 6
 Diketahui generate random nilai sebanyak 100 data, mean = 50, sd = 8. Tentukan
 ```sh
@@ -253,11 +270,13 @@ X1 = runif(1, max = mean)
 X2 = runif(1, min = mean, max = 100)
 x = runif(1, min = X1, max = X2)
 ```
+![image](https://user-images.githubusercontent.com/103357229/162623691-dee3a5e1-7961-4410-ae6e-9c8fc43ddaa0.png)
 Untuk menghitung nilai baku dapat dijalankan code berikut:
 ```sh
 x.z <- (x - mean) / sd
 x.z
 ```
+![image](https://user-images.githubusercontent.com/103357229/162623712-3c558333-ce83-4c33-a295-6d5ddf839873.png)
 > Untuk membuat histogram, kita akan membuat data random dan menggunakan fungsi `plot()` dengan type 'l' agar menghasilkan plot grafik
 ```sh
 set_data <- rnorm(n, mean, sd)
@@ -273,6 +292,7 @@ Untuk fungsi distribusi kita menggunakan fungsi `dnorm()`
 ```sh
 dnorm(iter, mean, sd)
 ```
+![image](https://user-images.githubusercontent.com/103357229/162623738-69d2895c-64d6-4f20-a0ae-8dd3314260a2.png)
 ### 6.B.
 Generate Histogram dari Distribusi Normal dengan breaks 50 dan format penamaan:
 NRP_Nama_Probstat_{Nama Kelas}_DNhistogram
@@ -291,7 +311,7 @@ Nilai Varian (σ²) dari hasil generate random nilai Distribusi Normal.
 ```sh
 var(set_data)
 ```
-
+![image](https://user-images.githubusercontent.com/103357229/162623774-ac8c80b0-bf0f-4ec0-ad2e-71d4314fb769.png)
 ## REFERENSI
 [https://rpubs.com/mpfoley73/458721]
 [https://www.statology.org/plot-binomial-distribution-r/]
