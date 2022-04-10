@@ -16,7 +16,7 @@ mean(rgeom(n = 10000, prob = p) == 3)
 ```
 ### 1.C. BELUM SELESAI
 Bandingkan Hasil poin a dan b , apa kesimpulan yang bisa didapatkan?
-> Pada suatu percobaan nilai yang didapatkan dari poin a adalah 0.1024 dan poin b adalah 0.1029. Kedua nilai tersebut saling mendekati. Dari percobaan tersebut dapat disimpulkan bahwa jumlah percobaan pada 
+> Pada suatu percobaan nilai yang didapatkan dari poin a adalah 0.1024 dan poin b adalah 0.1029. Kedua nilai tersebut saling mendekati. Dari percobaan tersebut dapat disimpulkan bahwa nilai peluang kejadian A adalah sama dengan nilai mean distribusi geometrik kejadian itu sendiri.
 ### 1.D.
 Histogram Distribusi Geometrik , Peluang X = 3 gagal Sebelum Sukses Pertama
 > Histogram yang dicari dapat dicari melalui code berikut. Sebelum menjalankan program, kita perlu menginstall package    `dplyr` dan `ggplot2` dengan cara
@@ -120,10 +120,11 @@ babies %>% ggplot() +
        title = 'n = 365 hari dengan lambda = 4.5') +
   theme_bw()
 
-babies %>% dplyr::summarize(six_babies = sum(babies$data > 6) / n())
+babies %>% dplyr::summarize(six_babies = sum(babies$data == 6) / n())
 ```
 ### 3.C.
 dan bandingkan hasil poin a dan b , Apa kesimpulan yang bisa didapatkan
+> Dalam suatu percobaan didapatkan nilai dari poin (a) adalah 0.1281201 dan poin (b) adalah 0.1150685. Kedua nilai ini sangat dekat. Sehingga, dapat ditarik kesimpulan bahwa peluang kejadian A sama dengan nilai jumlah distribusi Poissonnya.
 ### 3.D.
 Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Poisson.
 > Seperti soal sebelumnya kita akan menggunakan fungsi `mean()` dan `var()`
@@ -269,3 +270,4 @@ var(set_data)
 [https://rpubs.com/mpfoley73/458721]
 [https://www.statology.org/plot-binomial-distribution-r/]
 [https://bookdown.org/gabriel_butler/ECON41Labs/tutorial-5-the-poisson-distribution.html]
+
