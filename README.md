@@ -1,7 +1,7 @@
 ## P1_Probstat_E_5025201229
-Nama : Surya Abdillah
-NRP : 5025201229
-Kelas : Probabilitas dan Statistika E
+- Nama : Surya Abdillah
+- NRP : 5025201229
+- Kelas : Probabilitas dan Statistika E
 
 ## _Soal 1_
 Seorang penyurvei secara acak memilih orang-orang di jalan sampai dia bertemu dengan seseorang yang menghadiri acara vaksinasi sebelumnya.
